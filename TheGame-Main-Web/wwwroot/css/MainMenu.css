@@ -1,0 +1,12 @@
+﻿.main--menu {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+    gap: 10px; 
+}
+.menu--button {
+    padding: 10px 20px;
+    font-size: 16px;
+}

@@ -1,0 +1,35 @@
+﻿.grid {
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    padding: 10px;
+
+    /*    TODO it needs to be fixed in future, grids needs to generates depending on size window*/
+    /*overflow: hidden;*/ /* Hide overflowing content */
+    /*text-overflow: ellipsis;*/ /* Optional: Add '...' if text overflows */
+    /*white-space: nowrap;*/ /* Prevent text from wrapping */
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    
+
+    /* Prevent the items from affecting the grid size */
+    width: 50px;
+    height: 50px;
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Optional: Add '...' if text overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.board--grid{
+    width: 100%;
+    height: 100%;
+}

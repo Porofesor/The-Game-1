@@ -1,0 +1,60 @@
+﻿
+<body>
+    <div id="menuContainer">
+        @await Html.PartialAsync("/Views/TheGame/Menu/_Menu.cshtml")
+    </div>
+    
+    <div id="gameContainer" style="display: none;"></div>
+
+    <div id="gameContainer"></div>
+    @* @RenderSection("Scripts", required: false) *@
+</body>
+
+@* UI elements *@ 
+@* @await Html.PartialAsync("_TopUIPanel") *@
+@* @await Html.PartialAsync("_RightUIPanel") *@
+
+@* @* Main board(game map) *@
+@* @await Html.PartialAsync("_MainGameBoard") *@
+
+
+
+@section Scripts {
+    @* Scripts for menu *@
+    <script src="~/js/ts/TheGameMain/Menu/MainMenu.js"></script>
+    <script type="module" src="/js/ts/TheGameMain/Menu/LeaveToMenu.js"></script>
+
+    @* Scripts for idk wat *@
+    <script src="~/js/ts/TheGameMain/TheGameMain.js"></script>
+
+    @* Scripts for UI panels *@
+    <script src="~/js/ts/TheGameMain/UI/TopUIPanel.js"></script>
+    <script src="~/js/ts/TheGameMain/UI/RightUIPanel.js"></script>
+
+    @* Scripts for game rendering most likely *@
+    @* <script src="~/js/ts/Board/MainGameBoard.js"></script> *@
+
+    @* Script for Grid generation *@
+    <script src="~/js/ts/TheGameMain/Board/Map/GridGenerator.js"></script>
+}
+
+@section Styles {
+    @* CSS vars *@
+    <link rel="stylesheet" href="~/css/DevelopmentVariables.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    @* UI styles *@
+    <link rel="stylesheet" href="~/css/TopUIPanel.css" />
+    <link rel="stylesheet" href="~/css/RightUIPanel.css" />
+
+    @* Board styles *@
+    <link rel="stylesheet" href="~/css/MainGameBoard.css" />
+
+    @* Menu styles *@
+    <link rel="stylesheet" href="~/css/MainMenu.css" />
+
+    @* Styles for Mini Map & Left Panel*@
+    <link rel="stylesheet" href="~/css/UI/MiniMap.css" />
+    <link rel="stylesheet" href="~/css/UI/LeftPanel.css" />
+}

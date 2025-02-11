@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    //"module": "commonjs",
+    "module": "ESNext", // Use ES6 module system
+    "outDir": "wwwroot/js/ts",
+    "rootDir": "wwwroot/ts",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [ "wwwroot/ts/**/*.ts" ],
+  "exclude": [ "node_modules" ]
+}
